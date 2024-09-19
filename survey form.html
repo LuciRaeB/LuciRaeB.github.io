@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Yharnam Tourism Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Yharnam Tourism Survey Form</h1>
+    <p id="description">Thank you for aiding us in the improvement of our city</p>
+      <div class="survey">
+      <form id="survey-form" class="form">
+        <fieldset id=personal-info>
+          <label id="name-label" for="name">Name<input id="name" name="name" type="text" required placeholder="Name"/></label>
+          <label id="email-label" for="email">Email<input id="email" name="email" type="email" required placeholder="Email"/></label>
+          <label id="number-label" for="number">Insight (Optional)<input id="number" name="number" type="number" placeholder="Insight" min="0" max="99"/></label>
+        </fieldset>
+        <fieldset>
+          <h2 for="dropdown">What is your current faction<br/>
+
+            <select id="dropdown" name="faction">
+              <option value="3">Select your Faction</option>
+              <option value="4">Cainhurst Vilebloods</option>
+              <option value="5">Executioners</option>
+              <option value="6">Hunter of Hunters</option>
+              <option value="7">The League</option>
+              <option value="8">The Blood Beast</option>
+              <option value="9">Lumenwood Kin</option>
+            </select>
+          </h2>  
+        </fieldset>
+        <fieldset id="recommendation">
+          <h2 id="rec">Would you recommend Yharnam to a friend?</h2>
+          <label for="yes-rec"><input id="yes-rec" type="radio" name="recom" class="inline" checked value="10"/>Yes</label>
+          <label for="no-rec"><input id="no-rec" type="radio" name="recom" class="inline" value="11"/>No</label>
+            <label for="not-sure-rec"><input id="not-sure-rec" type="radio" name="recom" class="inline" value="12"/>Not sure</label>
+        </fieldset>
+        <fieldset>
+          <h2>What are your favorite aspects of Yharnam</h2>
+            <label><input type="checkbox" class="inline" value="20">Community</label>
+            <label><input type="checkbox" class="inline" value="21">Architecture</label>
+            <label><input type="checkbox" class="inline" value="22">Thriving night life</label>
+            <label><input type="checkbox" class="inline" value="23">Churches</label>
+            <label><input type="checkbox" class="inline" value="24">Beautiful forest hiking trails</label>
+            <label><input type="checkbox" class="inline" value="25">Exquisite Moon view</label>
+            <label><input type="checkbox" class="inline" value="26">Celestial beings</label>
+            <label><input type="checkbox" class="inline" value="27">Eldritch horrors</label>
+        </fieldset>
+        <fieldset>
+          <h3 for="comments">Comments and suggestions<br/>
+            <textarea id="comments" name="comments" rows="10" cols="61" placeholder="Enter comments here"></textarea>
+          </h3>
+        </fieldset>
+          <input id="submit" type="submit" value="Submit" />
+      </form>
+      </div>
+    </body>
+</html>
